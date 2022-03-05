@@ -2,8 +2,8 @@
 rm -rf /tmp/data.csv
 echo "emp_name,city,empid" >> /tmp/data.csv
 echo "piyush,gurgaon,1000" >> /tmp/data.csv
-echo "pavan,delhi,10001" >> /tmp/data.csv
-aws s3 cp /tmp/data.csv s3://nmap-report-oregon
+echo "shish,delhi,10001" >> /tmp/data.csv
+aws s3 cp /tmp/data.csv s3://linuxadvise-aws-demo-bucket
 echo $?
 if [ $? -eq 0 ]
 then
